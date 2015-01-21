@@ -3,18 +3,25 @@ html, body {
 	padding: 0px;
 	margin: 0px;
 	border: 0px;
-	background-color: #7d3b59;
+	
+	background-image: url('images/bg_stressed_linen.png');
+}
+
+h1 {
+	color: white;
+	font-size: 24px;
+	font-family: arial;
 }
 
 #header {
 	height: 150px;
 	width: 100%;
-	background-color: #6b6b6b;
+	background-color: rgba(0,0,0,0.3);
+	border-bottom: 1px solid rgba(255,255,255,0.3);
 }
 	
 	#header #header_content {
 		height: 150px;
-		background-color: #1C1C1C;
 	}
 		
 		#header #header_content img {
@@ -24,11 +31,29 @@ html, body {
 		}
 	
 	#header #navigation {
-		width: 500px;
-		background-color: #2E2E2E;
+		width: 350px;
 		height: 150px;
 		float: right;
 	}
+	
+		#navigation ul {
+			list-style: none;
+			float: right;
+			text-align: right;
+			margin-right: 20px;
+			font-size: 18px;
+			margin-top: 10px;
+		}
+	
+		#navigation a {
+			color:  gray;
+			text-decoration: none;
+		}
+		
+		#navigation a:hover {
+			color:  white;
+			text-decoration: underline;
+		}
 
 #main_content {
 	height: 100%;
@@ -39,8 +64,9 @@ html, body {
 	}
 	
 	#main_content #main_right {
-		width: 500px;
-		background-color: #7D3B6B;
+		width: 350px;
+		background-color: rgba(0,0,0,0.3);
 		height: 100vh;
 		float: right;
+		border-left: 1px solid rgba(255,255,255,0.3);
 	}
